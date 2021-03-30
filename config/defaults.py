@@ -76,7 +76,7 @@ _C.DATASETS = CN()
 # List of the dataset names for training, as present in paths_catalog.py
 _C.DATASETS.NAME = 'mars'
 # Root directory where datasets should be used (and downloaded if not found)
-_C.DATASETS.ROOT_DIR = '/data/chenzy/datasets/mars'
+_C.DATASETS.ROOT_DIR = '/home/application/hdd/haotian.chen/reid/datasets/MARS/MARS-v160809'
 # # List of the dataset names for training, as present in paths_catalog.py
 # _C.DATASETS.NAME = 'duke'
 # # Root directory where datasets should be used (and downloaded if not found)
@@ -171,13 +171,13 @@ _C.SOLVER.FP_16 = True
 # Number of images per batch
 # This is global, so if we have 8 GPUs and IMS_PER_BATCH = 16, each GPU will
 # see 2 images per batch
-_C.SOLVER.SEQS_PER_BATCH = 64
+_C.SOLVER.SEQS_PER_BATCH = 32
 
 # This is global, so if we have 8 GPUs and IMS_PER_BATCH = 16, each GPU will
 # see 2 images per batch
 _C.TEST = CN()
 # Number of images per batch during test
-_C.TEST.SEQS_PER_BATCH = 128
+_C.TEST.SEQS_PER_BATCH = 32
 # If test with re-ranking, options: 'yes','no'
 _C.TEST.RE_RANKING = 'no'
 # Path to trained model
@@ -194,6 +194,6 @@ _C.TEST.TEMPORAL_POOL_METHOD = 'avg'
 # Misc options
 # ---------------------------------------------------------------------------- #
 # Path to checkpoint and saved log of trained model
-_C.OUTPUT_DIR = ""
+_C.OUTPUT_DIR = "log_2021-03-30"
 _C.RANDOM_SEED = 999
 _C.EVALUATE_ONLY = False

@@ -9,6 +9,8 @@ Requirements:
 pytorch >= 0.4.1
 torchvision >= 0.2.1
 tqdm
+conda install --yes cython matplotlib pandas pydot scikit-learn
+conda install --yes -c conda-forge yacs
 [nvidia-apex](https://github.com/NVIDIA/apex), please follow the detailed install instructions 
 you need to switch to an earlier version if apex-gcc problem occurs
 git checkout f3a960f80244cf9e80558ab30f7f7e8cbf03c0a0

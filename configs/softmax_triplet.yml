@@ -1,6 +1,6 @@
 MODEL:
   PRETRAIN_CHOICE: 'imagenet'
-  PRETRAIN_PATH: '/home/chenzy/.torch/models/resnet50-19c8e357.pth'
+  PRETRAIN_PATH: '/home/lzw/.torch/models/resnet50-19c8e357.pth'
   IF_LABELSMOOTH: 'on'
   IF_WITH_CENTER: 'yes'
   ARCH : 'video_baseline' # NVAN or video_baseline
@@ -15,7 +15,7 @@ INPUT:
 DATASETS:
   SEQ_LEN: 4
   NAME : 'mars'
-  ROOT_DIR : '/data/chenzy/datasets/mars'
+  ROOT_DIR : '/home/application/hdd/haotian.chen/reid/datasets/MARS/MARS-v160809'
 #  NAME: 'duke'
 #  ROOT_DIR: '/data/chenzy/datasets/duke_mtmc/DukeMTMC-VideoReID'
 
@@ -64,6 +64,6 @@ TEST:
   NECK_FEAT: 'after'
   FEAT_NORM: 'yes'
 
-OUTPUT_DIR: '/data/chenzy/models/mars'
+OUTPUT_DIR: '.'
 
 

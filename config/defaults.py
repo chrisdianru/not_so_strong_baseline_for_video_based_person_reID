@@ -20,7 +20,7 @@ _C.MODEL = CN()
 # Using cuda or cpu for training
 _C.MODEL.DEVICE = "cuda"
 # ID number of GPU
-_C.MODEL.DEVICE_ID = "0, 1"
+_C.MODEL.DEVICE_ID = "0"
 # arch of network
 _C.MODEL.ARCH = 'video_baseline'
 # Name of backbone
